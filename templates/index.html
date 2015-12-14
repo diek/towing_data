@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chicago Towed Vehicle Data</title>
+
+    <meta charset="utf-8"/>
+    <link href={{ url_for('static', filename='kube.css') }} rel="stylesheet" media="screen">
+    <link href={{ url_for('static', filename='vehicle.css') }} rel="stylesheet" media="screen">
+
+
+
+    <link href={{ url_for('static', filename='favicon.png') }} rel="icon" media="screen">
+  </head>
+  <body>
+    <div class="padded">
+   <!--  Offset -->
+      <row>
+          <column cols="6"><h2>Towing Data - City of Chicago</h2></column>
+          <column cols="6">
+
+              <row end>
+                <column cols="4"><h3 class='medium' id='h3_make'>Car Make</h3></column>
+                <column cols="3"><h3 class='medium' id='h3_color'>Car Colors</h3></column>
+                <column cols="4"><h3 class='medium' id='h3_state'>Plate State</h3></column>
+              </row>
+
+          </column>
+      </row>
+    <!-- Offset end -->
+
+    <!-- form -->
+    <row>
+      <column cols="3"></column>
+      <column cols="9">
+        <form class="forms" id="aform" action="#">
+          <h6>Show Data and Visulize Highest Offenders.</h6>
+            <section class="checkbox-list">
+              <label><input type="radio" name="dataChoice" value="make">Manufacturer</label>
+              <label><input type="radio" name="dataChoice" value="color">Colors</label>
+              <label><input type="radio" name="dataChoice" value="state">Plate State</label>
+            </section>
+            <section>
+              <button id="btnChoice" type="primary" small>Select Data</button>
+            </section>
+        </form>
+      </column>
+    </row>
+    <!-- form end -->
+    <!-- Data Display Table-->
+    <row>
+      <!-- Table Title-->
+
+      <!-- Display Table-->
+      <column cols="3">
+        <table id='table_data' class="table-stripped">
+        <p id="table_title" class="data_labels"></p>
+          <thead>
+            <tr>
+              <td class="width-6"><h3>Item</h3></td>
+              <td class="width-6"><h3>Value</h3></td>
+            </tr>
+          </thead>
+          <tbody id="key_value">
+          <!-- Add Table data here -->
+          </tbody>
+        </table>
+      </column>
+      <!-- Data Display D3-->
+      <column id="chart" cols="9">
+      <p id="d3_title" class="data_labels"></p>
+
+      </column>
+    </row>
+    <!-- Data Display End -->
+    </div>
+    <!-- Script -->
+    <script src={{ url_for('static', filename='./bower_components/d3/d3.min.js') }}></script>
+    <script src={{ url_for('static', filename='vehicle_app.js') }}></script>
+  </body>
+</html>

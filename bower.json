@@ -1,0 +1,22 @@
+{
+  "name": "y",
+  "homepage": "https://github.com/diek",
+  "authors": [
+    "diek <diek@bellaliant.net>"
+  ],
+  "description": "towing_data_app",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "3.4.11"
+  }
+}

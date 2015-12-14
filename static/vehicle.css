@@ -1,0 +1,40 @@
+div.padded {
+  padding-top: 10px;
+  padding-right: 0.2em;
+  padding-bottom: 0.25in;
+  padding-left: 0.8em;
+}
+
+.data_ready {
+  visibility: hidden;
+}
+
+body {
+  background-color: #313437;
+}
+h2 {
+  color: #DC3D24;
+}
+h3 {
+  color: #33CCCC;
+}
+h6 {
+  color: #D0D0D0;
+}
+p.data_labels {
+    font-size: 20px;
+    /*color: #C8C8C8;*/
+    color: #FFFFCC;
+}
+
+td, tr {
+  color: white;
+}
+
+.medium {
+  opacity: 0.4; /* See the text more clearly over the background */
+}
+.heavy {
+  opacity: 0.9; /* See the text very clearly over the background */
+}
+
