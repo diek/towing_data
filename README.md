@@ -41,5 +41,3 @@ Pass
 
 #### File Manifest ####
 - README.md
-- create_db.sql
-- jitbit_sql_solutions.sql
